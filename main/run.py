@@ -1,4 +1,3 @@
-
 import cv2
 import os
 import image_dehazer
@@ -18,7 +17,7 @@ webCam = cv2.VideoCapture(0)
 frame_rate = 30  # Frames per second
 
 # Capture 5 frames and dehaze them
-for current_frame in range(10):
+for current_frame in range(5):
     success, frame = webCam.read()
     
     if not success:
@@ -62,3 +61,7 @@ out.release()
 cv2.destroyAllWindows()
 
 print(f'Dehazed video saved as {output_video_file}')
+
+
+
+
