@@ -8,9 +8,11 @@ from  image_dehazer import image_dehazer
 dehazer = image_dehazer(airlightEstimation_windowSze=15, boundaryConstraint_windowSze=3, C0=20, C1=300,
                         regularize_lambda=0.1, sigma=0.5, delta=0.85, showHazeTransmissionMap=False)
 
-# Open a connection to the webcam (usually 0 for built-in webcams)
+# Open a connection to the webcam 
 cap = cv2.VideoCapture(0)
 
+#just in case of any external webcams use 1 or -1.
+#cap = cv2.VideoCapture(1)
 while True:
     # Read a frame from the webcam
     ret, frame = cap.read()
