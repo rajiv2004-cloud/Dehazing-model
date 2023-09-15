@@ -10,8 +10,12 @@ os.makedirs(frame_folder, exist_ok=True)
 output_folder = 'dehazed_images/'
 os.makedirs(output_folder, exist_ok=True)
 
+# Create a folder to store dehazed videos
+output_video_folder = 'dehazed_videos/'  # Specify the folder path where you want to save the video
+os.makedirs(output_video_folder, exist_ok=True)
+
 # Output video file name
-output_video_file = 'dehazed_video.mp4'
+output_video_file = os.path.join(output_video_folder, 'dehazed_video.mp4')
 
 webCam = cv2.VideoCapture(0)
 frame_rate = 60  # Frames per second
