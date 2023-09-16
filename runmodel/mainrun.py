@@ -11,7 +11,6 @@ dehazer = image_dehazer(airlightEstimation_windowSze=15, boundaryConstraint_wind
 # Open a connection to the webcam 
 cap = cv2.VideoCapture(0)
 
-#just in case of any external webcams use 1 or -1.
 #cap = cv2.VideoCapture(1)
 while True:
     # Read a frame from the webcam
@@ -25,8 +24,7 @@ while True:
 
     # Display the dehazed frame
     cv2.imshow('Dehazed Video', dehazed_frame)
-
-    # Press 'q' to exit the loop and close the window
+    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
