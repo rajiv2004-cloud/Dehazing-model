@@ -12,7 +12,7 @@ dehazer = image_dehazer(airlightEstimation_windowSze=15, boundaryConstraint_wind
 cap = cv2.VideoCapture(0)
 
 # Set the desired frame rate (e.g., 30 frames per second)
-desired_frame_rate = 15
+desired_frame_rate = -10
 cap.set(cv2.CAP_PROP_FPS, desired_frame_rate)
 
 while True:
