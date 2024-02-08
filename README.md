@@ -49,19 +49,26 @@ The project encompasses the following key phases:
 - **Integration Capability**: Can be integrated into existing CCTV systems or specialized cameras used by rescue teams, provides an API for custom applications and third-party software integration.
 - **Potential Applications**: Suitable for firefighting operations, surveillance during hazardous situations, and integration into smart building systems for automated hazard detection and management.
 
-## Installation
+### Installation Steps
+1. Clone or download the repository from [GitHub](https://github.com/whitehats/image-dehazing-toolkit).
+2. Install the required dependencies using pip:
+    ```
+    pip install opencv-python numpy
+    ```
 
-1.Clone or download the repository from GitHub.
-2.Install the required dependencies using pip:
-          "pip install opencv-python numpy"
-
-
-[Instructions on how to use the algorithm]
+## Parameters
+The `remove_haze()` function accepts the following optional parameters for fine-tuning the dehazing process:
+- `airlightEstimation_windowSze`: Size of the window for estimating the airlight (default: 15)
+- `boundaryConstraint_windowSze`: Size of the window for boundary constraints (default: 3)
+- `C0`, `C1`: Constants for boundary constraints (default: C0=20, C1=300)
+- `regularize_lambda`: Regularization parameter (default: 0.1)
+- `sigma`: Standard deviation for the weighting function (default: 0.5)
+- `delta`: Fine-tuning parameter for dehazing (default: 0.85)
+- `showHazeTransmissionMap`: Whether to display the haze transmission map (default: True)
 
 ## Contributing
+Contributions to the Whitehats Image Dehazing Toolkit are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request on GitHub.
 
-[Guidelines for contributing to the project]
 
 ## License
-
-[License information for the project]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
