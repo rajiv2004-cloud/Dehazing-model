@@ -11,8 +11,6 @@ This repository contains the code and documentation for an AI-ML based intellige
 3. [Abstract](#abstract)
 4. [Idea Description](#idea-description)
 5. [Features](#features)
-6. [Installation](#installation)
-7. [Usage](#usage)
 8. [Contributing](#contributing)
 9. [License](#license)
 
