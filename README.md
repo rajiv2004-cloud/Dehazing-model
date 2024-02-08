@@ -53,6 +53,10 @@ The project encompasses the following key phases:
     ```
     pip install opencv-python numpy
     ```
+3.Install the required dependencies using pip:
+    ```
+    pip install -r requirements.txt
+    ```
 
 ## Parameters
 The `remove_haze()` function accepts the following optional parameters for fine-tuning the dehazing process:
