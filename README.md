@@ -67,8 +67,8 @@ The `remove_haze()` function accepts the following optional parameters for fine-
 - `showHazeTransmissionMap`: Whether to display the haze transmission map (default: True)
 
 ## Contributing
-Contributions to the Whitehats Image Dehazing Toolkit are welcome! If you have any suggestions, bug reports, or feature requests,please open an issue or submit a pull request on GitHub.
 
+Contributions to this project are welcome from the White-ahts team. If you have any suggestions, bug reports, or feature requests,please open an issue or submit a pull request on GitHub.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
