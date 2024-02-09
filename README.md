@@ -51,10 +51,6 @@ The project encompasses the following key phases:
 1. Clone or download the repository from [GitHub](https://github.com/whitehats/image-dehazing-toolkit).
 2. Install the required dependencies using pip:
     ```
-    pip install opencv-python numpy
-    ```
-3.Install the required dependencies using pip:
-    ```
     pip install -r requirements.txt
     ```
 
